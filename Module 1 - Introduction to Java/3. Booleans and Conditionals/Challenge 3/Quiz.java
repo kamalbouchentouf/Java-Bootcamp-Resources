@@ -29,40 +29,20 @@ public class Quiz {
 
         //Task 2: Check each answer - For each correct answer, add 5 points to the score.
         
-        switch (answerOne) {
-            case "a": break;
-            case "b": break;
-            case "c": score +=5 ; break ;
-            case "d": break;
-            default:
-                break;
+        if (answerOne.equals("c")) {
+            score += 5;
         }
 
-        switch (answerTwo) {
-            case "a": score +=5 ; break ;
-            case "b": break;
-            case "c": break ;
-            case "d": break;
-            default:
-                break;
+        if (answerTwo.equals("a")) {
+            score += 5;
         }
 
-        switch (answerThree) {
-            case "a": break;
-            case "b": break;
-            case "c": break ;
-            case "d": score +=5 ; break ;
-            default:
-                break;
+        if (answerThree.equals("d")) {
+            score += 5;
         }
 
-        switch (answerFour) {
-            case "a": score +=5 ; break ;
-            case "b": break;
-            case "c": break ;
-            case "d": score +=5 ; break ;
-            default:
-                break;
+        if (answerFour.equals("a") || answerFour.equals("b")) {
+            score += 5;
         }
         
         System.out.println("Your final score is: " + score + "/20");
