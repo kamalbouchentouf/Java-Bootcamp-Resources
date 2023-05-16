@@ -60,7 +60,7 @@ public class Quiz {
             case "a": score +=5 ; break ;
             case "b": break;
             case "c": break ;
-            case "d": break;
+            case "d": score +=5 ; break ;
             default:
                 break;
         }
